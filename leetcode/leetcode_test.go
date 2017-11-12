@@ -119,3 +119,12 @@ func TestGroupAnagrams(t *testing.T) {
 	result := GroupAnagrams(input)
 	fmt.Printf("%+v\n", result)
 }
+
+func TestValidSquare(t *testing.T) {
+	p1 := []int{3, 0}
+	p2 := []int{6, 0}
+	p3 := []int{6, 3}
+	p4 := []int{3, 3}
+	result := validSquare(p1, p2, p3, p4)
+	assert.True(t, result, "Not true")
+}

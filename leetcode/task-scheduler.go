@@ -10,6 +10,7 @@ func LeastInterval(tasks []byte, n int) int {
 	}
 
 	sort.Sort(sort.Reverse(sort.IntSlice(taskMap)))
+
 	return 0
 }
 
